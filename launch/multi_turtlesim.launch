@@ -4,7 +4,7 @@
     <node pkg="turtlesim" name="sim1" type="turtlesim_node"/>
 
 
-    <remap  from = "/turtle1/cmd_vel" to = "/turtle2/cmd_vel"/>
+    <remap  from = "/turtle1/cmd_vel" to = "/turtle1/cmd_vel_temp"/>
     <node pkg="turtlesim" name="sim2" type="turtlesim_node"/>
 
 

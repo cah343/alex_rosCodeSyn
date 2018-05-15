@@ -17,6 +17,9 @@ import rospy
 from geometry_msgs.msg import Twist
 from math import radians
 
+
+
+
 class DrawASquare():
     def __init__(self):
         # initiliaze
@@ -67,6 +70,13 @@ class DrawASquare():
         rospy.loginfo("Stop Drawing Squares")
         self.cmd_vel.publish(Twist())
         rospy.sleep(1)
+
+def main():
+
+    try:
+        DrawASquare()
+    except:
+        rospy.loginfo("node terminated.")
 
 if __name__ == '__main__':
     try:
