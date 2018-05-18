@@ -28,8 +28,15 @@ In order to run gazebo demo:
 
 In order to run your with your own script and robots: 
 
+1. Install alex_rossyn_final.py (https://github.com/cah343/alex_rosCodeSyn)
+2. Make sure all YAML files, control script, and alex_rossyn are in the same folder.
+3. Start roscore
+4. Change parameters in alex_rossyn_final.py to suit the original script, original robot name, and new robot name (Assumes YAML files are named [robot name].yaml and that they follow a format similar to the ones found in project repo)
+5. Execute the program with $ rosrun [your package] alex_rossyn_final.py
+6. The script should have generated a new script called:                 [original script name]_temp.py and executed said script. Alex_rossyn should be publishing a scaled message to the substitute robot via the original publisher topic. 
 
 
+For More Information and Background on this package, see Final Report Link!
 
 **Final Report Link:**
 
